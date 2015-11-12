@@ -1,36 +1,35 @@
 //
-//  WelcomeScene.cpp
+//  MenuScene.cpp
 //  YaiyaiWars
 //
-//  Created by 松山勇輝 on 2015/11/10.
+//  Created by 松山勇輝 on 2015/11/12.
 //
 //
 
-#include "WelcomeScene.h"
 #include "MenuScene.h"
 
 USING_NS_CC;
 
-WelcomeScene::WelcomeScene()
+MenuScene::MenuScene()
 {
     
 }
 
-WelcomeScene::~WelcomeScene()
+MenuScene::~MenuScene()
 {
     
 }
 
-Scene* WelcomeScene::createScene()
+Scene* MenuScene::createScene()
 {
     log("createしたタイミング");
     auto scene = Scene::create();
-    auto layer = WelcomeScene::create();
+    auto layer = MenuScene::create();
     scene->addChild(layer);
     return scene;
 }
 
-bool WelcomeScene::init()
+bool MenuScene::init()
 {
     if (!Layer::init()) {
         return false;
@@ -43,7 +42,7 @@ bool WelcomeScene::init()
     auto size = director->getWinSize();
     
     //背景を設定
-    auto background = Sprite::create("background.png");
+    auto background = Sprite::create("bg_2.png");
     background->setPosition(Vec2(size.width / 2.0, size.height / 2.0));
     this->addChild(background);
     
@@ -56,7 +55,7 @@ bool WelcomeScene::init()
     auto pSelectedSprite = Sprite::create("startBtn.png");
     
     //メニューアイテムの作成
-    auto pBtnItem = MenuItemSprite::create(pNormalSprite, pSelectedSprite, CC_CALLBACK_1(WelcomeScene::onClickStartBtnCallback, this));
+    auto pBtnItem = MenuItemSprite::create(pNormalSprite, pSelectedSprite, CC_CALLBACK_1(MenuScene::onClickSelectStageBtnCallback, this));
     
     //メニューの作成　pMenuの中にpBtnItemを入れる
     auto pMenu = Menu::create(pBtnItem, NULL);
@@ -68,8 +67,7 @@ bool WelcomeScene::init()
     return true;
 }
 
-void WelcomeScene::onClickStartBtnCallback(Ref* pSender)
+void MenuScene::onClickSelectStageBtnCallback(Ref* pSender)
 {
     log("タップされました。");
-    Director::getInstance()->replaceScene(TransitionFade::create(1.0f, MenuScene::createScene(), Color3B::WHITE));
 }
