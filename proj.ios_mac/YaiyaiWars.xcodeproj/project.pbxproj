@@ -11,6 +11,7 @@
 		003419B91BF217CF00004F91 /* bgm in Resources */ = {isa = PBXBuildFile; fileRef = 003419B81BF217CF00004F91 /* bgm */; };
 		003419BB1BF217D600004F91 /* image in Resources */ = {isa = PBXBuildFile; fileRef = 003419BA1BF217D600004F91 /* image */; };
 		003419BD1BF217DF00004F91 /* se in Resources */ = {isa = PBXBuildFile; fileRef = 003419BC1BF217DF00004F91 /* se */; };
+		00F48BC51BF4B00000A22DDD /* MenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00F48BC31BF4B00000A22DDD /* MenuScene.cpp */; };
 		1AC6FB21180E996B004C840B /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2d Mac.a */; };
 		1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB07180E9839004C840B /* libcocos2d iOS.a */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -112,6 +113,8 @@
 		003419B81BF217CF00004F91 /* bgm */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bgm; sourceTree = "<group>"; };
 		003419BA1BF217D600004F91 /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
 		003419BC1BF217DF00004F91 /* se */ = {isa = PBXFileReference; lastKnownFileType = folder; path = se; sourceTree = "<group>"; };
+		00F48BC31BF4B00000A22DDD /* MenuScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuScene.cpp; sourceTree = "<group>"; };
+		00F48BC41BF4B00000A22DDD /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScene.h; sourceTree = "<group>"; };
 		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -315,6 +318,8 @@
 				46880B8719C43A87006E1F66 /* HelloWorldScene.h */,
 				003419B21BF211F000004F91 /* WelcomeScene.cpp */,
 				003419B31BF211F000004F91 /* WelcomeScene.h */,
+				00F48BC31BF4B00000A22DDD /* MenuScene.cpp */,
+				00F48BC41BF4B00000A22DDD /* MenuScene.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -517,6 +522,7 @@
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				003419B41BF211F000004F91 /* WelcomeScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				00F48BC51BF4B00000A22DDD /* MenuScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
